@@ -97,3 +97,23 @@ footer {
     width: 100%;
 
 }
+
+.about-me {
+    text-align: center;
+    margin: 20px;
+}
+
+.about-me img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-me img:hover {
+    transform: scale(1.2);
+}
+
+.about-me p {
+    margin-top: 10px;
+}
