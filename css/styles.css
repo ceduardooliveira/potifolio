@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #c5c5cf;
 }
 
 header {
@@ -117,3 +117,10 @@ footer {
 .about-me p {
     margin-top: 10px;
 }
+
+.github {
+    color: rgb(38, 0, 255);
+    text-decoration: none;
+}
+
+
