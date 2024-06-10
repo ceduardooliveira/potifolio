@@ -13,7 +13,8 @@ header {
 }
 
 main {
-    padding: 2rem;
+    padding: 1rem;
+    margin: 4rem;
 }
 
 img {
@@ -60,7 +61,10 @@ h1, h2 {
 
 .text-section, .image-section {
     flex: 1;
-    min-width: 300px;
+    min-width: 500px;
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 18px;
 }
 
 .image-section img {
