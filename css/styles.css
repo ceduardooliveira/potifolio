@@ -62,7 +62,7 @@ h1, h2 {
 .text-section, .image-section {
     flex: 1;
     min-width: 500px;
-    background-color: bisque;
+    background-color: whitesmoke;
     border-radius: 5px;
     padding: 18px;
 }
