@@ -21,13 +21,13 @@ img {
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 5px;
-    width: 300px;
-    
-  }
-  
-  img:hover {
+    max-width: 100%; /* Alteração */
+    height: auto;
+}
+
+img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  }
+}
 
 h1, h2 {
     margin: 0 0 1rem 0;
@@ -61,17 +61,11 @@ h1, h2 {
 
 .text-section, .image-section {
     flex: 1;
-    min-width: 500px;
+    min-width: 100px; /* Alteração */
+    max-width: 50%; /* Alteração */
     background-color: whitesmoke;
     border-radius: 5px;
     padding: 18px;
-}
-
-.image-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
 }
 
 footer {
@@ -89,9 +83,9 @@ footer {
     border-radius: 4px;
     padding: 6px;
     width: 15px;
-  }
+}
 
-.copyright{
+.copyright {
     text-align: center;
     padding: 0.5rem 0;
     background-color: #333;
@@ -99,7 +93,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-
 }
 
 .about-me {
@@ -127,4 +120,14 @@ footer {
     text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .text-section, .image-section {
+        min-width: 100%; /* Alteração */
+        max-width: 100%; /* Alteração */
+    }
+}
