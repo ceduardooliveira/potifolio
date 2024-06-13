@@ -21,7 +21,7 @@ img {
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 5px;
-    max-width: 100%; /* Alteração */
+    max-width: 50%;
     height: auto;
 }
 
@@ -127,7 +127,7 @@ footer {
     }
 
     .text-section, .image-section {
-        min-width: 100%; /* Alteração */
-        max-width: 100%; /* Alteração */
+        min-width: 100%; 
+        max-width: 100%;
     }
 }

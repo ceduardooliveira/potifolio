@@ -13,13 +13,43 @@
     <main>
         <div class="content">
             <div class="text-section">
-                <h2>Descrição</h2>
-                <p>Descrição detalhada sobre banco de dados.</p>
+                <h2>Banco de Dados Relacionais</h2>
+                <p>Nesta máteria aprendi sobre banco de dados relacionais. Esses dados sã ochamados de realacionais porque as tabelas dentro do banco de dados
+                    podem estar relacionadas entre si por meio de chaves primárias e estrangeiras.</p>
+                <p>Dentro da estrutrura, temos: Tabelas, onde tem linhas (registros) e colunas (atributos). Chave primária, é uma coluna ou um conjuto de colunas
+                    que identifica unicamente cada linha em uma tabela. Chave estrangeira, é  uma coluna ou conjuto de colunas que estabele um vínculo entre duas tabelas, referenciando
+                    a chave primária de outra tabela.
+                </p>    
+                <p>A normalização é o processo de organizar os dados para reduzir a redundância e melhorar a integridade dos dados.</p>
+                <p>Tem a operações em banco de dados.</p>
+                    <ul>CRUD: As operações básicas de banco de dados são CREATE(criar), READ(ler), UPDATE(atualizar), e DELETE(excluir).</ul>
+                    <ul>SQL (Structured Query Language): A linguagem padrão para manipulação de dados relacionais, usada para executar consultas, inserir,
+                    atualizar e excluir dados.
+                    </ul>
+                <p>Ao lado o modelo Entidade Relacional.</p>
+                    <ul>Neste moledo ER, Uma biblioteca deseja informatizar seu sistema de gestão de livros. Cada livro tem um
+                    título, um ISBN (International Standard Book Number), uma editora e um ano de
+                    publicação. Cada livro pode ter vários autores, mas cada autor pode ter escrito vários
+                    livros. Modele este sistema utilizando um diagrama de entidade-relacionamento.</ul>
+                    <ul>Na entidade LIVRO temos ISBN como chave primária e TITULO, EDITORA, ANO_PUBLICADO como atributos. Do outro lado temos a entidade
+                        AUTOR, com ID_AUTOR chave primária e NOME como atributo. Entre essas duas entidades, temos a entidade ESCRITO com as chaves estrangeiras
+                        ID_AUTOR e ISBN. Neste caso podemos fazer a seguinte leitura, que LIVROS pode ter varios AUTOR e AUTOR pode ter escrito vários LIVROS.
+                    </ul>
+                <p>Na segunda imagem tem mais um modelo ER.</p>
+                    <ul>Na entidade PROJETO temos o ID_PROJETO como chave primária e NOME_PROJETO, DESCRIÇÃO como atributos. Do outro lado temos a entidade FUNCIONÁRIOS
+                        que tem como chave primária o ID_FUNCIONARIO e como atributo NOME_FUNCIONARIO, DATA_ADMISSÃO. Entres essas duas entidades, temos a entidade POSSUI,
+                        com duas chaves estrangeiras, ID_PROJETO e ID_FUNCIONARIO. Neste caso o relacionamento delas são N para N, onde PROJETO possui vários FUNCIONARIOS, e 
+                        Funcionarios possui vários PROJETOS.
+                    </ul>    
             </div>
             <div class="image-section">
-                <h2>Imagens</h2>
-                <img src="path/to/image1.jpg" alt="Descrição da imagem 1">
-                <img src="path/to/image2.jpg" alt="Descrição da imagem 2">
+                <h2>Códigos</h2>
+                <a href="img/modeloER_01.png">
+                    <img src="img/modeloER_01.png" alt="Modelo ER.">
+                 </a>
+                 <a href="img/modeloER_02.png">
+                    <img src="img/modeloER_02.png" alt="Modelo ER.">
+                 </a>
             </div>
         </div>
     </main>
