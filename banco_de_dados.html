@@ -40,10 +40,12 @@
                         que tem como chave primária o ID_FUNCIONARIO e como atributo NOME_FUNCIONARIO, DATA_ADMISSÃO. Entres essas duas entidades, temos a entidade POSSUI,
                         com duas chaves estrangeiras, ID_PROJETO e ID_FUNCIONARIO. Neste caso o relacionamento delas são N para N, onde PROJETO possui vários FUNCIONARIOS, e 
                         Funcionarios possui vários PROJETOS.
-                    </ul>    
+                    </ul>  
+                    <p>No link abaixo, tem a lista 01 com exercícios.</p>
+                    <a class="github" href="https://github.com/ceduardooliveira/Lista01_BancodeDados.git">Lista de exercício 01.</a>  
             </div>
             <div class="image-section">
-                <h2>Códigos</h2>
+                <h2>Diagrama</h2>
                 <a href="img/modeloER_01.png">
                     <img src="img/modeloER_01.png" alt="Modelo ER.">
                  </a>
@@ -51,6 +53,68 @@
                     <img src="img/modeloER_02.png" alt="Modelo ER.">
                  </a>
             </div>
+        </div>
+
+        <div class="content">
+            <div class="text-section">
+                <h2>Comandos DDL, DML, DQL.</h2>
+                <p>Diagrama DDL - Data Definition Language. São os seguintes comandos.</p>
+                    <ul>CREATE TABLE - ALTER TABLE - DROP TABLE</ul>                  
+                <p>Comando DML - Data Manipulation Language. São os seguintes comandos.</p>
+                    <ul>INSERT - UPDATE - DELETE - SELECT</ul>                 
+                <p>Comando DQL - Data Query Language. São os seguintes comandos.</p>
+                    <ul>SELECT - OPERADORES SQL - ORDER BY - JOIN - GROUP BY</ul>
+
+                <h2>Listando...</h2>    
+                <p>Após popular toda tabela, fiz as consultas para verificar, todos os livros, encontrar todos os livros escritos por umautor específico e 
+                    encontrar todos os autores que escreveram um livro específico.
+                </p>
+                <p>SELECT * FROM autor - SELECT * FROM livro - SELECT * FROM livro_autor seleciona todas as colunas de todas as linhas da tabela autor.
+                     É usado para visualizar todos os dados armazenados nesta tabela.                     
+                </p>
+                <ul>Letra a - estamos listando todos os livros. O comando dado seleciona todos os títulos dos livros e os nomes dos autores. o JOIN é usado para combinar as três tabelas.
+                    E o resultado mostra uma lista de todos os livros junto com seus respectivos autores.
+                </ul>
+                <ul>Letra b - é para encontrar todos os livros escritos por um autor especifico. O comando dado seleciona os títulos dos livros escritos pelo autor cujo nome é 'Mario Sergio',
+                    usa JOIN para combinar as tabelas livro, livro_autor e autor da mesma forma que o comando anterior.
+                    Filtra os resultados com a cláusula WHERE para incluir apenas os livros escritos por 'Mario Sergio'.
+                </ul>
+                <ul>Lestra c - é para encontrar tos os autores que escrevem um livro específico. O comando dado  seleciona os nomes dos autores que escreveram o livro cujo título é 'A Game of Thrones',
+                    usa JOIN para combinar as tabelas autor, livro_autor e livro da mesma forma que os comandos anteriores e 
+                    filtra os resultados com a cláusula WHERE para incluir apenas os autores que escreveram 'A Game of Thrones'.
+                </ul>
+                <p>No link abaixo, tem a lista 02 com exercícios.</p>
+                <a class="github" href="https://github.com/ceduardooliveira/-Lista02_BancodeDados.git">Lista de exercício 02.</a>
+                                      
+            </div>
+            <div class="image-section">
+                <h2>Comandos</h2>
+                <a href="img/comandoDQL.png">
+                    <img src="img/comandoDQL.png" alt="Comando em SQL">
+                 </a>                 
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text-section">
+                <h2>Banco de Dados NoSQL</h2>
+                <p>Nesta parte com banco de dados NoSQL apredi usar o mongoDB, sobre as vantagens e desvantagens do NoSQL, tipos de Chave/Valor.</p>
+                <p>Aprendi o usar o Atlas, um serviço totalamente gerenciado na nuvem de dados da Google. La criei uma organização chamada Senai,
+                    onde criei um projeto chamado teste para conhecer essa plataforma. Para fazer os comando usei o Windows powershell para realizar as consultas.
+                    Para realizar as consultas tem o código ao lado também.
+                </p>
+                
+               
+                <p>No link abaixo, tem a tarefa completa no classroom.</p>
+                <a class="github" href="https://classroom.google.com/c/NjI4ODg4MzMwNDgy/a/NjgyMzA0Nzg3MjE1/details">Lista de exercício 01.</a>
+                                      
+            </div>
+            <div class="image-section">
+                <h2>Comandos</h2>
+                <a href="img/w.png">
+                    <img src="img/cAtlas.png" alt="Modelo ER.">
+                 </a>                
+            </div>            
         </div>
     </main>
     <footer>
