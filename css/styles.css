@@ -138,3 +138,22 @@ footer {
         max-width: 100%;
     }
 }
+
+.video{
+    border-radius: 4px;
+}
+
+.github-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.imgGit {
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+.imgGit:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
