@@ -120,6 +120,13 @@ footer {
     text-decoration: none;
 }
 
+.link{
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin: 0 auto; 
+}
+
 @media screen and (max-width: 768px) {
     .content {
         flex-direction: column;
